@@ -26,12 +26,25 @@ body{
     font-family: var(--fuentePrincipal);
     font-weight: 400;
     font-size: 1.8rem;
-    width: 100vw;
-    height: 100vh;
     background-image: url(../img/night.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
+    height: 100vh;
+}
+/*Estilos generales */
+.section-m{
+    margin-top: 5rem;
+}
+.margin-right{
+    margin-right: .8rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 98vw;
+    height: 98vh;
 }
 .container.day{
     background-image: url(../img/day.jpg);
@@ -77,6 +90,37 @@ body{
     margin-right: 0.8rem;
 }
 /*Grados centigrados*/
+.weather__number{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.weather__grados,
 .weather__simbolo{
+    font-size: 8rem;
     color: var(--texto);
+
+}
+/*Icon*/
+.weather__description{
+    color: var(--texto);
+    font-size: 5rem;
+}
+/*location*/
+.location{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--texto);
+    font-size: 6rem;
+    font-weight: 600;
+}
+.location__date{
+    font-weight: 500;
+    font-size: 4rem;
+}
+.weather{
+    color: var(--texto);
+    display: flex;
+    justify-content: space-around;
 }
