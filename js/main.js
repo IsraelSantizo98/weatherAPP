@@ -67,7 +67,7 @@ searchForm.addEventListener("submit", e => {
 })
 //El ingresar a la pagina aparece un pais enconcreto
 window.onload = () => {
-    getWeatherData();
+    getWeatherData("Barcelona");
 }
 //Se modifica url
 
