@@ -5,34 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <script src="https://kit.fontawesome.com/1085598771.js" crossorigin="anonymous"></script>
     <title>Weather APP</title>
 </head>
 <body id="body" class="body">
-    <div class="container" id="container">
-        <h1>Weather APP</h1>
-        <div class="weather__container">
-            <form action="" class="weather__submit" id="search__submit">
-                <input type="text" placeholder="Ingresa tu ubicacion" id="search__input" class="search">
-                <button type="submit" class="btn btn-weather"><i class="fas fa-search-location"></i></button>
-            </form>
-            <div class="weather__number section-m">
-                <div class="weather__grados margin-right" id="degreeNumber"></div>
-                <div class="weather__simbolo">°C</div>
+    <div class="weather__image">
+        <div class="contenedor" id="container">
+            <h1 class="no-margin header-centrado">Weather APP</h1>
+            <div class="weather__container">
+                <form action="" class="weather__submit" id="search__submit">
+                    <input type="text" placeholder="Ingresa tu ubicacion" id="search__input" class="search">
+                    <button type="submit" class="btn btn-weather"><i class="fas fa-search-location"></i></button>
+                </form>
+                <div class="weather__number section-m">
+                    <div class="weather__grados margin-right" id="degreeNumber"></div>
+                    <div class="weather__simbolo">°C</div>
+                </div>
+                <div class="weather__ico__container">
+                    <div class="weather__icon" id="weatherIcon"></div>
+                    <div class="weather__description" id="description"></div>
+                </div>
             </div>
-            <div class="weather__ico__container">
-                <div class="weather__icon" id="weatherIcon"></div>
-                <div class="weather__description" id="description"></div>
+            <div class="location">
+                <div class="location_city" id="timezone"></div>
+                <div class="location__date" id="date"></div>
+            </div>
+            <div class="weather">
+                <div class="weather_min"><small>min</small><span id="min">°C</span></div>
+                <div class="weather_max"><small>max</small><span id="max">°C</span></div>
             </div>
         </div>
-        <div class="location">
-            <div class="location_city" id="timezone"></div>
-            <div class="location__date" id="date"></div>
-        </div>
-        <div class="weather">
-            <div class="weather_min"><small>min</small><span id="min">°C</span></div>
-            <div class="weather_max"><small>max</small><span id="max">°C</span></div>
-        </div>
+        <footer class="footer">
+            <div class="contenedor">
+                <nav>
+                    <a href="#">Github</a>
+                </nav>
+            </div>
+        </footer>
     </div>
     <script src="js/main.js"></script>
 </body>

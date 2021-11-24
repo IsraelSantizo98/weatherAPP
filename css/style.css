@@ -4,7 +4,7 @@
     --fondoGenerador: #fd7014;
     --boton: #fd7014;
     --borderBoton: #b35a1f;
-    --texto: #ffffff;
+    --blanco: #ffffff;
     --fuentePrincipal: 'Montserrat', sans-serif;
     --fuenteSecundaria: 'Open Sans', sans-serif;
 }
@@ -16,36 +16,53 @@ html{
 *,*:before, *:after{
     box-sizing: inherit;
 }
+h1, h2, h3, h4{
+    font-family: var(--fuentePrincipal);
+    line-height: 1.2;
+}
 h1{
-    font-size: 5rem;
+    font-size: 4.8rem;
     font-weight: 600;
     text-align: center;
     color: var(--texto);
 }
+img{
+    max-width: 100%;
+}
 body{
-    font-family: var(--fuentePrincipal);
-    font-weight: 400;
-    font-size: 1.8rem;
-    background-image: url(../img/night.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    height: 100vh;
+    font-family: var(--fuenteSecundaria);
+    font-size: 1.6rem;
+    line-height: 2;
 }
 /*Estilos generales */
 .section-m{
     margin-top: 5rem;
 }
+.no-margin{
+    margin: 0;
+}
+.header-centrado{
+    text-align: center;
+    margin-top: 3rem;
+    color: var(--blanco);
+}
 .margin-right{
     margin-right: .8rem;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 98vw;
-    height: 98vh;
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    border: 1px solid #000;
 }
+.weather__image{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/day.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; /*Aunque no es necesario por el center center*/
+}
+/*
 .body.day{
     background-image: url(../img/day.jpg);
 }
@@ -54,13 +71,14 @@ body{
 }
 .body.night{
     background-image: url(../img/night.jpg);
-}
+}*/
 .weather__container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 2.2rem;
+    color: var(--blanco);
 }
 /*Input buscador*/
 .weather__submit{
@@ -90,7 +108,8 @@ body{
     margin-right: 0.8rem;
 }
 /*Grados centigrados*/
-.weather__number{
+.weather__number,
+.weather__ico__container{
     display: flex;
     justify-content: center;
     width: 80%;
@@ -102,6 +121,11 @@ body{
 
 }
 /*Icon*/
+.weather__ico__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .weather__description{
     color: var(--texto);
     font-size: 5rem;
