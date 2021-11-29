@@ -69,6 +69,14 @@ searchForm.addEventListener("submit", e => {
 window.onload = () => {
     getWeatherData("Barcelona");
 }
+
+function reset() {
+    
+}
+searchForm.addEventListener("submit", e => {
+    e.preventDefault();
+    searchForm.reset();
+})
 //Se modifica url
 
 //https://community-open-weather-map.p.rapidapi.com/find?q=${city}&units=metric&lang=sp
