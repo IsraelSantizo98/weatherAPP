@@ -12,16 +12,32 @@
 <body id="body">
     <div class="weather__image">
         <main class="contenedor" id="container">
-            <h1 class="centrar-texto no-margin heading">Weather APP</h1>
-            <form action="" class="formulario margin-top" id="formularioSubmit">
-                <div class="campo">
-                    <input type="text" name="" id="search__input" class="campo__field">
-                    <button type="submit" class="btn btn-principal"><i class="search fas fa-search-location"></i></button>
+            <div class="container">
+                <h1 class="centrar-texto no-margin">Weather APP</h1>
+                <form action="" class="formulario margin-top" id="formularioSubmit">
+                    <div class="campo">
+                        <input type="text" name="" id="search__input" class="campo__field">
+                        <button type="submit" class="btn btn-principal"><i class="search fas fa-search-location"></i></button>
+                    </div>
+                </form>
+                <div class="contenedor weather__temperature">
+                    <div class="weather__grados margin-right" id="degreeNumber"></div>
+                    <div class="weather__simbolo">°C</div>
                 </div>
-            </form>
-            <div class="contenedor weather__temperature">
-                <div class="weather__grados margin-right" id="degreeNumber"></div>
-                <div class="weather__simbolo">°C</div>
+                <div class="weather__container">
+                    <div class="weather__ico__container">
+                        <div class="weather__icon" id="weatherIcon"></div>
+                        <div class="weather__description" id="description"></div>
+                    </div>
+                </div>
+                <div class="location">
+                    <div class="location_city" id="timezone"></div>
+                    <div class="location__date" id="date"></div>
+                </div>
+                <div class="weather">
+                    <div class="weather_min"><small>min </small><span id="min">°C</span></div>
+                    <div class="weather_max"><small>max </small><span id="max">°C</span></div>
+                </div>
             </div>
         </main>
     </div>
