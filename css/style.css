@@ -16,7 +16,6 @@ html{
 }
 *,*:before, *:after{
     box-sizing: inherit;
-    overflow: hidden;
 }
 /** Utilidades **/
 h1, h2, h3, h4{
@@ -43,12 +42,17 @@ body{
 .margin-top{
     margin-top: 5rem;
 }
+.margin-bottom{
+    margin-bottom: 5rem;
+}
+.margin-bottom-2{
+    margin-bottom: 2rem;
+}
 .centrar-texto{
     text-align: center;
 }
 .heading{
     text-align: center;
-    margin-top: 3rem;
     color: var(--blanco);
 }
 .contenedor{
@@ -64,19 +68,20 @@ body{
     background-position: center center;
     background-repeat: no-repeat; /*Aunque no es necesario por el center center*/
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /** Formulario **/
 .formulario{
     color: var(--blanco);
-    padding: 2rem;
-
 }
 .campo{
-    display: flex;
     background-color: var(--blanco);
     border-radius: 1rem;
 }
 .campo__field{
-    flex: 1;
     height: 3.2rem;
     border: none;
 }
@@ -86,4 +91,29 @@ body{
 .btn{
     background-color: transparent;
     border: none;
+}
+/** Grados **/
+.weather__temperature{
+    display: flex;
+    font-size: 6rem;
+    color: var(--blanco);
+}
+.location{
+    color: var(--blanco);
+    text-align: center;
+}
+.location_city{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+.weather__description{
+    font-size: 3rem;
+}
+.weather{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: var(--blanco);
+    font-size: 3rem;
+    text-transform: uppercase;
 }
